@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cha{
+            display:grid;
+            grid-template-areas:
+            "header header header"
+            "sidebar content aside"
+            "footer footer footer" ;
+            grid-template-columns:1fr 1fr 1fr;
+            grid-template-rows: 50px 50px 50px;
+            row-gap: 5px;
+        }
+        .header{
+            grid-area: header;
+            background-color: rgb(255, 251, 165);
+            text-align: center;
+            padding-top: 15px;
+        }
+        .sidebar{
+            grid-area: sidebar ;
+            background-color: rgb(212, 123, 218);
+            text-align: center;
+            padding-top: 15px;}
+        .content{
+            grid-area: content ;
+            background-color: rgb(236, 87, 181);
+            text-align: center;
+            padding-top: 15px;
+        }
+        .aside{
+            grid-area: aside ;
+            background-color: rgb(182, 123, 218);
+            text-align: center;
+            padding-top: 15px;
+        }
+        .footer{
+            grid-area: footer ;
+            background-color: rgb(237, 255, 156);
+            text-align: center;
+            padding-top: 15px;}
+         
+    </style>
+</head>
+<body>
+  
+    <div class="cha">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+        <div class="aside">Aside</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
